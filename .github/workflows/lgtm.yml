@@ -19,4 +19,4 @@ jobs:
     steps:
       - run: echo test lgtm
         with:
-          run-name: ${{ github.actor }}
+          github-token: ${{secrets.GITHUB_TOKEN}}

@@ -14,7 +14,8 @@ jobs:
   lgtm:
     runs-on: ubuntu-latest
     if: >-
-        contains(github.event.comment.body, 'lgtm')　|| contains(github.event.review.body, 'lgtm')
+        contains(github.event.comment.body, 'lgtm')　
+        || contains(github.event.review.body, 'lgtm')
     steps:
       - run: echo test lgtm
         with:

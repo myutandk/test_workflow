@@ -17,3 +17,5 @@ jobs:
       - if: >-
       - contains(github.event.comment.body, 'lgtm')　|| contains(github.event.review.body, 'lgtm')
       - run: echo test lgtm
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
